@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.douzone</groupId>
+		<artifactId>spring-study</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>spring-study-container</artifactId>
+	
+	<dependencies>
+		
+		<!-- test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version> <!-- 스프링에서 junit쓰려면 꼭 4점대로 -->
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- Junit --> <!-- junit 사용하려면 위에 test컨테이너가 필요? -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version> <!-- 스프링에서 junit쓰려면 꼭 4점대로 -->
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		
+	</dependencies>	
+</project>
